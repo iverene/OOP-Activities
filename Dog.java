@@ -17,8 +17,8 @@ class Dog {
         return "Woof! Woof!";
     }
     
-    public void setNumberOfPuppies(int num) {
-        numPuppies = num;
+    public void setNumberOfPuppies() {
+        numPuppies = puppies.length;
     }
 
     public String showNumberOfPuppies() {
