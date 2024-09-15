@@ -3,7 +3,7 @@ class Activity {
 
        Dog dog = new Dog();
        dog.setName("Skye");
-       dog.setNumberOfPuppies(3);
+       dog.setNumberOfPuppies();
 
        System.out.println(dog.showName());
        System.out.println(dog.bark());
