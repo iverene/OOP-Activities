@@ -1,29 +1,37 @@
 class Activity {
-    public static void main (String args[]) {
+    public static void main(String[] args) {
+        
+        Dog dog = new Dog();
+        dog.setName("Skye");
+        dog.setNumberOfPuppies(5);
 
-       Dog dog = new Dog();
-       dog.setName("Skye");
-       dog.setNumberOfPuppies();
+        
+        Dog puppy1 = new Dog();
+        puppy1.setName("Chase");
+        dog.addPuppy(0, puppy1);
 
-       Dog puppy1 = new Dog();
-       puppy1.names="Chase";
-       dog.setPuppy(puppy1);
+        Dog puppy2 = new Dog();
+        puppy2.setName("Zuma");
+        dog.addPuppy(1, puppy2);
 
-       Dog puppy2 = new Dog();
-       puppy2.names="Zuma";
-       dog.setPuppy(puppy2);
+        Dog puppy3 = new Dog();
+        puppy3.setName("Rubble");
+        dog.addPuppy(2, puppy3);
 
-       dog.puppies[0] = puppy1;
-       dog.puppies[1] = puppy2;
+        Dog puppy4 = new Dog();
+        puppy4.setName("Marshall");
+        dog.addPuppy(3, puppy4);
 
-       System.out.println(dog.showName());
-       System.out.println(dog.bark());
-       System.out.println(dog.showNumberOfPuppies());
-       System.out.println("Puppies:");
-       //System.out.println(dog.showPuppies().names);
-       
-       for (int i=0; i < dog.showNumberOfPuppies().length(); i++) {
-        System.out.println(dog.showPuppies()[i]);
-       }
+        Dog puppy5 = new Dog();
+        puppy5.setName("Everest");
+        dog.addPuppy(4, puppy5);
+
+        
+        System.out.println(dog.showName());
+        System.out.println(dog.bark());
+        System.out.println(dog.showNumberOfPuppies());
+
+        
+        dog.showPuppies();
     }
 }
